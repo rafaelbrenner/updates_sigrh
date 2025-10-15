@@ -1,0 +1,3 @@
+--Manual
+--#336662 - LNC 2021 (banner portal do servidor e modificao no texto de apresentação)
+--UPDATE comum.parametro SET valor = URLDOSISTEMA + '/sigrh/img/lnc/banner-lnc.jpg' WHERE codigo = '7_101200_24';

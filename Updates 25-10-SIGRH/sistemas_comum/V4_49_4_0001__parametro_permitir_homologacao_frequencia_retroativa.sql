@@ -1,0 +1,2 @@
+--#348966 - IMPEDIR A HOMOLOGAÇÃO DE FREQUÊNCIA FORA DO CALENDÁRIO MENSAL
+--INSERT INTO comum.parametro (nome,descricao,valor,id_subsistema,id_sistema,codigo,tempo_maximo,tipo,padrao,valor_minimo,valor_maximo) VALUES  ('PERMITIR_HOMOLOGACAO_FREQUENCIA_RETROATIVA','Se o valor for true, os gestores da unidade poderão homologar a frequência dos servidores de forma retroativa, após o período definido pelo calendário de homologação de frequência.','true',101600,7,'7_101600_13',NULL,16,NULL,NULL,NULL);

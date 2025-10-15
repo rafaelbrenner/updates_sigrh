@@ -1,0 +1,3 @@
+-- #458162 - Alterar texto referente à cota em nota informativa
+UPDATE comum.template_documento SET texto='##UNIDADECONCURSO##, conforme objeto do Edital nº##NUMEROEDITAL##, divulga a relação dos candidatos que se autodeclararam ##SISTEMA_CONCORRENCIA##, nos termos da Lei nº 12.990/2014.<br/>Departamento Acadêmico e/ou Unidade Acadêmica Especializada ##UNIDADECONCURSO##, Área de Conhecimento ##AREACONCURSO##.'
+WHERE codigo = '7_100900_25';

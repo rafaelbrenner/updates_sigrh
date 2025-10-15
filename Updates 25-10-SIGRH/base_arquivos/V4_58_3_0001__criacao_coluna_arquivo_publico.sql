@@ -1,0 +1,36 @@
+--Manual
+
+--#396114 - Nova coluna no banco de SUSTENTAÇÃO de arquivos.
+--#390453 - Modificação na manipulação de arquivos
+
+
+-- Script a ser executado no banco "administrativo" para gerar o update que deverá ser executado no banco "base_arquivos"
+-- SELECT 'UPDATE public.arquivos SET publico = true WHERE id_arquivo IN ('|| y.ids ||');'
+-- FROM (
+-- 	SELECT string_agg(id_arquivo::TEXT, ',') AS ids 
+-- 	FROM (
+-- 		SELECT id_arquivo_ata AS id_arquivo FROM colegiados.reuniao_conselho UNION
+-- 		SELECT id_arquivo_pauta AS id_arquivo FROM colegiados.reuniao_conselho UNION
+-- 		SELECT id_arquivo FROM colegiados.resolucao UNION
+-- 		SELECT id_arquivo FROM concurso.edital UNION
+-- 		SELECT id_arquivo FROM concurso.video_edital UNION
+-- 		SELECT id_arquivo FROM concurso.edital_convocacao UNION
+-- 		SELECT id_arquivo FROM concurso.resolucao UNION
+-- 		SELECT id_arquivo FROM concurso.portaria_concurso UNION
+-- 		SELECT id_arquivo_projeto AS id_arquivo FROM concurso.vaga_concurso UNION
+-- 		SELECT id_arquivo_programa AS id_arquivo FROM concurso.vaga_concurso UNION
+-- 		SELECT id_arquivo FROM concurso.ata_concurso UNION
+-- 		SELECT id_arquivo FROM concurso.ata_resultado UNION
+-- 		SELECT id_arquivo FROM concurso.nota_informativa UNION
+-- 		SELECT id_arquivo FROM concurso.anexo_recurso UNION
+-- 		SELECT id_arquivo FROM concurso.anexo_reconsideracao UNION
+-- 		SELECT id_arquivo FROM concurso.anexo_resposta_reconsideracao UNION
+-- 		SELECT id_arquivo FROM concurso.anexo_requerimento UNION
+-- 		SELECT id_arquivo FROM concurso.anexo_resposta_requerimento UNION
+-- 		SELECT id_arquivo FROM concurso.validacao_pontuacao_inscricao UNION
+-- 		SELECT resposta_arquivo AS id_arquivo FROM questionario.resposta UNION
+-- 		SELECT id_arquivo FROM agenda.evento_agenda UNION
+-- 		SELECT id_arquivo FROM rh.comunicado_dap
+-- 	) AS x
+-- 	WHERE id_arquivo IS NOT NULL
+-- ) AS y;

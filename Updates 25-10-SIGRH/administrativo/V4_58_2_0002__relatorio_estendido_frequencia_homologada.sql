@@ -1,0 +1,6 @@
+--#380242 - Melhorias no relatório de Frequências Já Homologadas.
+
+ALTER TABLE funcional.frequencia ADD COLUMN IF NOT EXISTS id_unidade_lotacao INT NULL; 
+ALTER TABLE funcional.frequencia ADD CONSTRAINT id_unidade_lotacaofk FOREIGN KEY (id_unidade_lotacao) REFERENCES comum.unidade (id_unidade); 
+ALTER TABLE funcional.frequencia ADD COLUMN IF NOT EXISTS id_unidade_exercicio INT NULL; 
+ALTER TABLE funcional.frequencia ADD CONSTRAINT id_unidade_exerciciofk FOREIGN KEY (id_unidade_exercicio) REFERENCES comum.unidade (id_unidade);

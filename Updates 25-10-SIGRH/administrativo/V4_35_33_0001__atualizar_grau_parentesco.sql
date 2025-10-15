@@ -1,0 +1,3 @@
+--#307043 - Remoção do parâmetro PARENTESCOS_CADASTRAR_VIA_PROCESSO
+-- Substituir os valores de X,Y e Z pelos valores contidos no parâmetro removido.
+--UPDATE rh_tipos.tipo_grau_parentesco SET permite_cadastro_dependente = true WHERE id_tipo_grau_parentesco IN (X,Y,Z);
