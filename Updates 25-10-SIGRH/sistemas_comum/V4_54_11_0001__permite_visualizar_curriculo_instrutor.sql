@@ -1,0 +1,3 @@
+--#387132 - Permitir que alunos potenciais visualizem o currículo do instrutor de uma turma antes de se inscreverem nela
+
+--INSERT INTO comum.parametro (nome,descricao,valor,id_subsistema,id_sistema,codigo,tempo_maximo,tipo,padrao,valor_minimo,valor_maximo) VALUES ('EXIBIR_CURRICULO_INSTRUTOR_PUBLICAMENTE','Indica se o currículo do instrutor poderá ser visto publicamente junto às telas das suas turmas. Os dados sensíveis do currículo do instrutor permanecerão ocultos do público. ','false',101200,7,'7_101200_477',NULL,16,NULL,NULL,NULL);

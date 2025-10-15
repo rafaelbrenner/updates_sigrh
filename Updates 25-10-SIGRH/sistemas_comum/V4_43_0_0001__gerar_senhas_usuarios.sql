@@ -1,0 +1,11 @@
+--  Manual
+-- #329990 - Erro vixe em alterar lotação ou exercício
+--
+--    SCRIPT RODADO NO BANCO COMUM PARA GERAR OS UPDATES DE ATUALIZAÇÃO DE SENHAS
+--
+--    Trocar o XXXXXXXXXXXX com os logins gerados na consulta V4_43_0_0001__usuarios_atualizar_senha.sql do administrativo
+--    O resultado dessa consulta deverá ser executado no banco administrativo para atualizar as senhas dos usuários.
+--
+-- SELECT 'UPDATE comum.usuario SET senha = ' || '''' || senha || '''' || ' WHERE login = ' || '''' || login || ''';'
+-- FROM comum.usuario
+-- WHERE login IN ( XXXXXXXXXXXX );

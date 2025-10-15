@@ -1,0 +1,3 @@
+-- #422862 - Atualização campos nos relatórios de concurso
+
+update comum.template_documento  set texto = '##UNIDADECONCURSO##, conforme objeto do Edital nº##NUMEROEDITAL##, divulga a relação dos candidatos que se autodeclararam pretos ou pardos / quilombolas / indígenas, nos termos da Lei nº 12.990/2014.<br/>Departamento Acadêmico e/ou Unidade Acadêmica Especializada ##UNIDADECONCURSO##, Área de Conhecimento ##AREACONCURSO##.' where codigo = '7_100900_25';
