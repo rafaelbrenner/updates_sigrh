@@ -1,0 +1,59 @@
+[2025-10-17 15:06:58] [INFO] Iniciando verificação das atualizações do SIGRH
+[2025-10-17 15:06:58] [INFO] Arquivo de log: /c/Users/71637575149/Documents/update_sigrh/updates_sigrh/Updates 25-10-SIGRH/verificacao_20251017_150658.log
+[2025-10-17 15:06:58] [SUCCESS] Arquivo SQL encontrado: /c/Users/71637575149/Documents/update_sigrh/updates_sigrh/Updates 25-10-SIGRH/verify_updates.sql
+[2025-10-17 15:06:58] [INFO] Testando conexão com PostgreSQL...
+[2025-10-17 15:06:58] [INFO] Host: 164.41.103.55 | Porta: 5432 | Banco: administrativo | Usuário: rafael.brenner
+[2025-10-17 15:06:59] [SUCCESS] Conexão estabelecida com sucesso!
+[2025-10-17 15:06:59] [INFO] 
+[2025-10-17 15:06:59] [INFO] Executando verificações no banco de dados...
+[2025-10-17 15:06:59] [INFO] Executando verificações do arquivo: /c/Users/71637575149/Documents/update_sigrh/updates_sigrh/Updates 25-10-SIGRH/verify_updates.sql
+[2025-10-17 15:06:59] [SUCCESS] Verificações executadas com sucesso!
+[2025-10-17 15:06:59] [INFO] 
+[2025-10-17 15:06:59] [INFO] ========================================
+[2025-10-17 15:07:00] [INFO] RESULTADOS DA VERIFICAÇÃO
+[2025-10-17 15:07:00] [INFO] ========================================
+[2025-10-17 15:07:00] [INFO] 
+[2025-10-17 15:07:00] [ERROR] TRIGGERS    | ✗ ERRO - Triggers ainda existem: tg_cadastroalteracaoemail_up, tg_cadastroalteracaoemail_up
+[2025-10-17 15:07:01] [SUCCESS] COLUNA LOGIN | ✓ OK - Coluna login com 100 caracteres |           100
+[2025-10-17 15:07:01] [SUCCESS] COLUNA ATIVO - LINHA_TRANSPORTE | ✓ OK - Coluna ativo criada | boolean    | true
+[2025-10-17 15:07:02] [SUCCESS] COLUNA EXIGE_OBSERVACAO - OCORRENCIA | ✓ OK - Coluna exige_observacao criada | boolean    | true
+[2025-10-17 15:07:02] [WARNING] UPDATE TIPO_GRAU_PARENTESCO | ⚠ AVISO - Script estava comentado, não foi executado
+[2025-10-17 15:07:04] [SUCCESS] COLUNA AVALIACAO_CHEFIA | ✓ OK - Coluna avaliacao_chefia criada
+[2025-10-17 15:07:04] [SUCCESS] COLUNA DATA_INATIVACAO | ✓ OK - Coluna data_inativacao criada
+[2025-10-17 15:07:05] [SUCCESS] FK AUTORIZACAO_IRPF | ✓ OK - FK autorizacao_acesso_irpf_id_calendario_fkey existe
+[2025-10-17 15:07:05] [SUCCESS] COLUNA CARACTERIZA_PCD | ✓ OK - Coluna caracteriza_pcd criada
+[2025-10-17 15:07:06] [SUCCESS] COLUNA ID_VAGA_CONCURSO_NOMEACAO | ✓ OK - Coluna id_vaga_concurso_nomeacao criada
+[2025-10-17 15:07:06] [SUCCESS] COLUNAS UNIDADE - FREQUENCIA | ✓ OK - Colunas id_unidade_lotacao e id_unidade_exercicio criadas |               2
+[2025-10-17 15:07:07] [SUCCESS] COLUNAS ID_GENERO | ✓ OK - Colunas id_genero criadas nas tabelas |                   4
+[2025-10-17 15:07:07] [SUCCESS] NOVOS GENEROS | ✓ OK - Novos gêneros cadastrados (IDs 5-11) |             7
+[2025-10-17 15:07:07] [SUCCESS] COLUNAS HISTORICO - FORMACAO_ESCOLAR | ✓ OK - Todas as colunas de histórico criadas |               8
+[2025-10-17 15:07:08] [SUCCESS] NOVAS CLASSES FUNCIONAIS | ✓ OK - Novas classes criadas (IDs 112-119) |               8
+[2025-10-17 15:07:08] [SUCCESS] NOVOS TIPOS PROGRESSAO | ✓ OK - Novos tipos de progressão criados (IDs 19, 20, 21) | ACELERAÇÃO DA PROGRESSÃO POR CAPACITAÇÃO; Reposicionamento PCCTAE - Medida Provisória Nº 1.286; Reposicionamento na Carreira - Medida Provisória Nº 1.286
+[2025-10-17 15:07:09] [SUCCESS] COLUNA SALDO - PROGRESSAO | ✓ OK - Coluna saldo criada
+[2025-10-17 15:07:09] [SUCCESS] INDICES PERFORMANCE | ✓ OK - Índices de performance criados |               6
+[2025-10-17 15:07:09] [SUCCESS] PARAMETRO BLOQUEIO FERIAS | ✓ OK - Parâmetro BLOQUEIA_ENTRADA_SERVIDOR_FERIAS criado
+[2025-10-17 15:07:10] [SUCCESS] COLUNAS VIGENCIA - CLASSE_FUNCIONAL | ✓ OK - Colunas inicio_vigencia e termino_vigencia criadas
+[2025-10-17 15:07:10] [SUCCESS] COLUNAS VIGENCIA - CARGA_HORARIA_CAPAC_PROG | ✓ OK - Colunas inicio_vigencia e termino_vigencia criadas
+[2025-10-17 15:07:10] [SUCCESS] TIPO PROGRESSAO ACELERACAO | ✓ OK - Tipo progressão 21 atualizado corretamente
+[2025-10-17 15:07:11] [SUCCESS] TABELA COTA_CONCORRENCIA_CONCURSO | ✓ OK - Tabela cota_concorrencia_concurso criada
+[2025-10-17 15:07:11] [SUCCESS] COLUNA ID_ARQUIVO_COMPROV_DEFICIENCIA | ✓ OK - Coluna id_arquivo_comprov_deficiencia criada
+[2025-10-17 15:07:12] [SUCCESS] SCHEMA GOVERNANCA | ✓ OK - Schema governanca criado
+[2025-10-17 15:07:12] [SUCCESS] TABELAS MODULO GOVERNANCA | ✓ OK - Tabelas do módulo governança criadas |               4
+[2025-10-17 15:07:12] [SUCCESS] EXTENSION UNACCENT | ✓ OK - Extension unaccent instalada
+[2025-10-17 15:07:13] [SUCCESS] TIPO NECESSIDADE ADVENTISTA 7º DIA | ✓ OK - Tipo necessidade Adventista do 7º Dia cadastrado
+[2025-10-17 15:07:13] [SUCCESS] TRIGGERS RECRIADAS | ✓ OK - Triggers tg_cadastroalteracaoemail_up recriadas
+[2025-10-17 15:07:16] [INFO] 
+[2025-10-17 15:07:16] [INFO] ========================================
+[2025-10-17 15:07:16] [INFO] RESUMO FINAL
+[2025-10-17 15:07:16] [INFO] ========================================
+[2025-10-17 15:07:16] [SUCCESS] ✓ Verificações OK: 27
+[2025-10-17 15:07:16] [ERROR] ✗ Erros encontrados: 1
+[2025-10-17 15:07:16] [WARNING] ⚠ Avisos: 1
+[2025-10-17 15:07:16] [INFO] ========================================
+[2025-10-17 15:07:16] [INFO] 
+[2025-10-17 15:07:16] [INFO] 
+[2025-10-17 15:07:16] [ERROR] ✗ FORAM ENCONTRADOS ERROS NAS VERIFICAÇÕES!
+[2025-10-17 15:07:16] [ERROR] Verifique os erros acima e execute os scripts SQL faltantes.
+[2025-10-17 15:07:16] [INFO] 
+[2025-10-17 15:07:16] [INFO] Verificação finalizada em: 17/10/2025 15:07:16
+[2025-10-17 15:07:16] [INFO] Log completo salvo em: /c/Users/71637575149/Documents/update_sigrh/updates_sigrh/Updates 25-10-SIGRH/verificacao_20251017_150658.log
